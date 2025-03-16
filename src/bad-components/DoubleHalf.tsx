@@ -19,7 +19,6 @@ function Doubler({
     );
 }
 
-<<<<<<< HEAD
 function Halver({
     dhValue,
     setDhValue
@@ -27,9 +26,6 @@ function Halver({
     dhValue: number;
     setDhValue: React.Dispatch<SetStateAction<number>>;
 }): React.JSX.Element {
-=======
-function Halver(): React.JSX.Element {
->>>>>>> origin/task-forms
     return (
         <Button
             onClick={() => {
@@ -42,23 +38,15 @@ function Halver(): React.JSX.Element {
 }
 
 export function DoubleHalf(): React.JSX.Element {
-<<<<<<< HEAD
     const [dhValue, setDhValue] = useState<number>(10);
-=======
->>>>>>> origin/task-forms
     return (
         <div>
             <h3>Double Half</h3>
             <div>
                 The current value is: <span>{dhValue}</span>
             </div>
-<<<<<<< HEAD
             <Doubler dhValue={dhValue} setDhValue={setDhValue}></Doubler>
             <Halver dhValue={dhValue} setDhValue={setDhValue}></Halver>
-=======
-            <Doubler></Doubler>
-            <Halver></Halver>
->>>>>>> origin/task-forms
         </div>
     );
 }
